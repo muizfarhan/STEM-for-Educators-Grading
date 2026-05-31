@@ -4,7 +4,7 @@ This repository contains an automated grading pipeline that utilizes Anthropic's
 
 ### Prerequisites
 
-Make sure your device has Python installed. If you haven't already installed the following requirements before, you can do so using the following commands:
+Make sure your device has Python installed. If you haven't already installed the script will install the following dependencies for you:
 
 ```bash
 pip install anthropic
@@ -21,7 +21,8 @@ ANTHROPIC_API_KEY="your_actual_api_key_goes_here"
 # Usage Instructions
 
 - Prepare the Rubric: Ensure the master grading rubric is named Rubric.pdf and is located in the root directory.
-- Stage Submissions: Place all student submission files into the src/ directory. All files must be in PDF format. 3. Execute the Pipeline: Open the claude.ipynb Jupyter Notebook and execute all cells sequentially.
+- Stage Submissions: Place all student submission files into the src/ directory. All files must be in PDF format.
+- Execute the Pipeline: Run the claude.py file using `python claude.py`
 - Review Results: Once execution is complete, the aggregated grades, criteria breakdowns, and evaluator comments will be available in the output file (e.g., results.json).
 
 # System Architecture and Workflow
